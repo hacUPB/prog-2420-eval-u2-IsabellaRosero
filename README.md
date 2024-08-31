@@ -105,18 +105,19 @@ coeficiente_arrastre_actual = coeficiente_arrastre
 
 3. imulación de desintegración orbital
 MIENTRAS altitud_actual > altitud_minima_seguridad
-    # Calcular pérdida de altitud debido al arrastre
+
+}Calcular pérdida de altitud debido al arrastre
     altitud_perdida = coeficiente_arrastre_actual * altitud_actual
     altitud_actual = altitud_perdida
 
-    # Aumentar coeficiente de arrastre
+Aumentar coeficiente de arrastre
     coeficiente_arrastre_actual += 0.0001
 
-    # Mostrar estado actual
+Mostrar estado actual
     MOSTRAR "Altitud actual: " + altitud_actual + " km"
     MOSTRAR "Coeficiente de arrastre actual: " + coeficiente_arrastre_actual
 
-    # Detener si se estabiliza
+Detener si se estabiliza
     SI altitud_perdida < 0.1
         ROMPER
 
