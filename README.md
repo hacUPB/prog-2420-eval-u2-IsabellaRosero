@@ -123,9 +123,13 @@ Detener si se estabiliza
 
 4. Mostrar resultado final
 SI altitud_actual <= altitud_minima_seguridad
+
     MOSTRAR "El satélite ha reingresado en la atmósfera terrestre y se ha desintegrado."
+   
 SINO
     MOSTRAR "El satélite se ha estabilizado en una órbita baja."
+
+FIN
 
 ### Análisis
 
