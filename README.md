@@ -2,7 +2,11 @@
 # Documentación del proyecto
 ## Unidad 2
 
+<<<<<<< HEAD
 Estudiante:  Isabella Rosero Montezuma
+=======
+Estudiante: Isabella Rosero 
+>>>>>>> 5e36afc196df9b4c9736077da31f2cb7c7267182
 ID:  000505216
 ---
 # Autoevaluación
@@ -105,6 +109,7 @@ coeficiente_arrastre_actual = coeficiente_arrastre
 
 3. imulación de desintegración orbital
 MIENTRAS altitud_actual > altitud_minima_seguridad
+<<<<<<< HEAD
     # Calcular pérdida de altitud debido al arrastre
     altitud_perdida = coeficiente_arrastre_actual * altitud_actual
     altitud_actual = altitud_perdida
@@ -117,19 +122,49 @@ MIENTRAS altitud_actual > altitud_minima_seguridad
     MOSTRAR "Coeficiente de arrastre actual: " + coeficiente_arrastre_actual
 
     # Detener si se estabiliza
+=======
+
+}Calcular pérdida de altitud debido al arrastre
+    altitud_perdida = coeficiente_arrastre_actual * altitud_actual
+    altitud_actual = altitud_perdida
+
+Aumentar coeficiente de arrastre
+    coeficiente_arrastre_actual += 0.0001
+
+Mostrar estado actual
+    MOSTRAR "Altitud actual: " + altitud_actual + " km"
+    MOSTRAR "Coeficiente de arrastre actual: " + coeficiente_arrastre_actual
+
+Detener si se estabiliza
+>>>>>>> 5e36afc196df9b4c9736077da31f2cb7c7267182
     SI altitud_perdida < 0.1
         ROMPER
 
 4. Mostrar resultado final
 SI altitud_actual <= altitud_minima_seguridad
+<<<<<<< HEAD
     MOSTRAR "El satélite ha reingresado en la atmósfera terrestre y se ha desintegrado."
 SINO
     MOSTRAR "El satélite se ha estabilizado en una órbita baja."
 
+=======
+
+    MOSTRAR "El satélite ha reingresado en la atmósfera terrestre y se ha desintegrado."
+   
+SINO
+    MOSTRAR "El satélite se ha estabilizado en una órbita baja."
+
+FIN
+
+>>>>>>> 5e36afc196df9b4c9736077da31f2cb7c7267182
 ### Análisis
 
 Este programa simula cómo un satélite en órbita pierde altitud debido al arrastre atmosférico y eventualmente podría reingresar en la atmósfera terrestre o estabilizarse en una órbita baja. Al principio, el programa le pide al usuario que ingrese algunos datos: la altitud inicial del satélite, un valor pequeño que representa el arrastre atmosférico, y una altitud mínima de seguridad, que es el límite por debajo del cual el satélite ya no se considera seguro en órbita.
 
 Una vez que se tienen estos datos, el programa comienza con la simulación. La altitud del satélite se va actualizando en cada paso, restando la pérdida de altitud causada por el arrastre. Este arrastre se hace más fuerte a medida que el satélite desciende, por lo que el programa también incrementa el valor del coeficiente de arrastre en cada paso. El programa sigue simulando este proceso hasta que el satélite alcanza la altitud mínima de seguridad o hasta que la pérdida de altitud se vuelve muy pequeña, lo que indicaría que el satélite se ha estabilizado.
 
+<<<<<<< HEAD
 Finalmente, el programa verifica en qué estado quedó el satélite. Si ha caído por debajo de la altitud mínima, muestra un mensaje indicando que el satélite ha reingresado en la atmósfera y se ha desintegrado. Si, por otro lado, el satélite no descendió tanto y la pérdida de altitud se estabilizó, el programa indica que el satélite ha alcanzado una órbita baja estable
+=======
+Finalmente, el programa verifica en qué estado quedó el satélite. Si ha caído por debajo de la altitud mínima, muestra un mensaje indicando que el satélite ha reingresado en la atmósfera y se ha desintegrado. Si, por otro lado, el satélite no descendió tanto y la pérdida de altitud se estabilizó, el programa indica que el satélite ha alcanzado una órbita baja estable
+>>>>>>> 5e36afc196df9b4c9736077da31f2cb7c7267182
